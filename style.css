@@ -1,0 +1,213 @@
+@import url(reset.css);
+
+body{
+    background-color:#FFFDF1;
+    #max-width: 1400px;
+}
+
+.banner img{
+    max-width: 1400px;
+    display: block;
+    margin: 0 auto;
+    background-size: contain;
+}
+
+h1{
+    letter-spacing: 4px;
+}
+
+
+/* ---------所有產品--------- */
+.index_product{
+    padding-top: 88px;
+    text-align: center;
+    padding-bottom: 88px;
+}
+
+.index_product h1{
+    font-weight: bold;
+    margin-bottom: 48px;
+}
+
+.index_product ul{
+    display: flex;
+    justify-content: center;
+}
+
+.index_product li{
+    margin-right: 40px;
+    font-weight: 500;
+}
+
+/* ---------熱銷產品--------- */
+.hot_sale{
+    padding: 88px auto;
+    max-width: 1200px;
+    margin: 0 auto;
+    line-height: 1.2;
+}
+
+.hot_sale ul {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hot_sale li {
+    flex-basis: calc(25% - 24px); /* 考慮間距 */
+    flex-grow: 1; /* 允許元素增加寬度以填滿父容器 */
+    margin-bottom: 36px;
+    text-align: left;
+  }
+
+.hot_sale h1{
+    color: var(--gray-scale-2, #909090);
+
+/* Body/內文2/medium */
+font-family: Noto Sans TC;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+letter-spacing: 1.6px;
+}
+
+.hot_sale h2{
+    color: var(--text-black, var(--text-black, #333));
+
+/* Body/內文1/medium */
+font-family: Noto Sans TC;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 150%; /* 27px */
+letter-spacing: 1.8px;
+}
+
+.hot_sale h3{
+    color: var(--system-error, #FF3B30);
+
+/* Body/內文1/bold */
+font-family: Noto Sans TC;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 150%; /* 27px */
+letter-spacing: 1.8px;
+}
+
+.hot_sale h4{
+    color: var(--gray-scale-2, #909090);
+font-family: Noto Sans TC;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 21px */
+letter-spacing: 1.4px;
+text-decoration-line: line-through;
+}
+
+
+.hot_sale button{
+    display: block;
+    border-radius: 8px;
+    background: #355441;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+
+    margin: 0 auto;
+    width: 270px;
+    height: 45px;
+
+    border: none;
+    margin-top: 8px;
+      
+}
+
+.hot_sale i{
+    font-size: 25px;
+    margin-right: 8px;
+    line-height: 45px;
+}
+
+/* ---------使命與目標--------- */
+.mission{
+    background-image: url(./image/misssion/mission_bg.png);
+    padding-top:  88px;
+    text-align: center;
+    padding-bottom: 200px;
+
+    position: relative;
+    
+}
+
+.mission h1{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 48px;
+
+    font-weight: bold;
+    
+}
+
+.mission ul{
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    margin-bottom: 48px;
+
+    
+}
+
+.mission li{
+    width: 376px;
+    margin-right: 32px;
+}
+
+.mission img{
+    width: 376px;
+    border-radius: 32px;
+
+    margin-bottom: 16px;
+}
+
+.mission h2{
+    font-weight: bold;
+    letter-spacing: 3.2px;
+
+    margin-bottom: 16px;
+}
+
+.mission p{
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1.6px;
+    line-height: 150%; /* 24px */
+}
+
+.mission .btn{
+
+    width: 120px;
+
+    position: absolute;
+    right: 238px;
+    top: 700px;
+
+    border-radius: 0;
+}
+
+/* ------------footer先這樣 要死掉了--------------- */
+
+.footer img{
+    display: block;
+    width: 100%;
+}
+
+
+
+
+
+
+
+

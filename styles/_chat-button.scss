@@ -1,0 +1,64 @@
+.chat-button {
+    $size: 80px;
+    width: $size;
+    height: $size;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 10rem;
+    bottom: 5rem;
+    background: #335441;
+    border-radius: 50rem 50rem 5rem 50rem;
+
+    .dot-container {
+        display: flex;
+        transition: all .2s;
+    }
+
+    .dot {
+        $size: 12px;
+        $gap: 8px;
+        width: $size;
+        height: $size;
+        background: #fff;
+        border-radius: 50rem;
+        transition: all .2s;
+
+        &.left {
+            transform: translateX(-$gap);
+        }
+
+        &.right {
+            transform: translateX($gap);
+        }
+    }
+
+    &:hover {
+        .dot {
+            $eye-translate-x: 8px;
+            $eye-translate-y: 4px;
+
+            &.left {
+                transform: translate($eye-translate-x, -$eye-translate-y);
+            }
+
+            &.right {
+                transform: translate(-$eye-translate-x, -$eye-translate-y);
+            }
+
+            &.middle {
+                width: 32px;
+                height: 16px;
+                border-radius: 0 0 50rem 50rem;
+                transform: translateY(14px);
+            }
+        }
+    }
+
+    &:active {
+        .dot-container {
+            transform: translate(-8px, -4px) rotateZ(20deg);
+        }
+    }
+}
