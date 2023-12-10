@@ -1,0 +1,97 @@
+@import url("../reset.css");
+
+body{
+    background-color: #f9f9f9;
+    width: 100%;
+    color: #333;
+    font-family: 'Noto Sans TC', sans-serif, 'Roboto', sans-serif;
+    /* ----不確定為何顏色沒吃到＆字體有沒有吃到---- */
+}
+
+/* -------------header導覽列----------------- */
+.header{
+    background-color: #FFE78F;
+    height: 84px;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.headerContent{
+    height: 84px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 62.5%;
+    margin: auto auto;
+}
+
+.headerContent > a{
+    display: none;
+}
+
+.navText{
+    display: flex;
+    margin-left: 96px;
+}
+
+.navText li a{
+    color: #333;
+    padding: 16px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.5;
+    letter-spacing: 2.4px;
+}
+
+.navIcon{
+    display: flex;
+    margin-left: 48px;
+    font-size: 24px;
+}
+
+.navIcon li a{
+    color: #333;
+    padding: 8px;
+}
+
+
+/* -----------banner頁面標題----------------- */
+.banner{
+    background-image: url("../img/pc_banner.png");
+    height: 200px;
+}
+
+.bannerContent{
+    color: #FFFFFF;
+    margin-left: 280px;
+    padding-top: 45px;
+
+}
+
+.bannerContent h1{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 4px;
+}
+
+.breadscrumb{
+    display: flex; 
+}
+
+.breadscrumb li{
+    margin-right: 12px;
+    margin-top: 16px;
+}
+
+.breadscrumb li a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+
+/* -----------content內文----------------- */
