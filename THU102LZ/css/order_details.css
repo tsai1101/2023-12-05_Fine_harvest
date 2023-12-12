@@ -28,7 +28,7 @@ body {
     padding-left: 150px;
 }
 
-.content {
+.wrapper {
     width: 1200px;
     margin: 88px auto;
     position: relative;
@@ -88,7 +88,7 @@ body {
     width: 60%;
     margin-left: 36px;
     padding-left: 100px;
-    border-left: 1px solid #333333;
+    border-left: 2px solid #333333;
 }
 
 .right-content {
@@ -98,7 +98,7 @@ body {
 .right-content-title {
     font-size: 24px;
     font-weight: bold;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid black;
     margin-bottom: 32px;
 }
 
@@ -128,7 +128,7 @@ span {
     display: block;
     font-size: 20px;
     color: #335441;
-    border: 1px solid #335441;
+    border: 2px solid #335441;
     border-radius: 25px;
     padding: 8px 16px;
     margin-right: 72px;
@@ -137,7 +137,7 @@ span {
 /* --------------- 訂單內容 --------------- */
 .order-info {
     border-radius: 8px;
-    border: 1px solid #333333;
+    border: 2px solid #333333;
     padding: 8px;
     margin: 32px auto 0;
 }
@@ -145,7 +145,7 @@ span {
 .order-info h5 {
     font-size: 20px;
     font-weight: 500;
-    border-bottom: 1px solid #333333;
+    border-bottom: 2px solid #333333;
     padding-top: 8px;
     padding-bottom: 12px;
 }
@@ -161,7 +161,7 @@ span {
 /* --------------- 商品資料 --------------- */
 .product-info {
     border-radius: 8px;
-    border: 1px solid #333333;
+    border: 2px solid #333333;
     padding: 8px;
     margin: 16px auto 24px;
 }
@@ -170,7 +170,7 @@ span {
     width: 100%;
     margin-top: 8px;
     display: flex;
-    border-bottom: 1px solid #333333;
+    border-bottom: 2px solid #333333;
     padding-top: 8px;
     padding-bottom: 12px;
 }
@@ -205,6 +205,11 @@ span {
     border-radius: 8px;
 }
 
+.product-info-3 {
+    border-bottom: 2px solid #335441;
+    padding: 16px 0;
+}
+
 .product-info-name {
     width: 70%;
 }
@@ -231,6 +236,27 @@ span {
     margin-left: 24px;
 }
 
+/* --------------- 總計 --------------- */
+.total {
+    display: flex;
+    justify-content: end;
+    margin-right: 40px;
+}
+.total-title {
+    margin-right: 16px;
+}
+.total-title h3, .total-price h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+.total-title h4, .total-price h4 {
+    font-size: 18px;
+}
+.total-price h4 {
+    text-align: end;
+}
+
 /* --------------- 按鈕 --------------- */
 .btn-buy-again a {
     display: block;
@@ -243,4 +269,110 @@ span {
     padding: 8px 16px;
     text-align: center;
     margin-left: 390px;
+}
+
+/* --------------- RWD --------------- */
+@media screen and (max-width: 375px) {
+    html {
+        overflow-x: hidden;
+    }
+    body {
+        overflow-x: hidden;
+    }
+
+    .bn {
+        height: 200px;
+        text-shadow: 2px 2px 5px #333333;
+    }
+    .bn h1 {
+        padding-top: 55px;
+        padding-left: 38px;
+        font-size: 28px;
+    }
+    .bn h2 {
+        padding-left: 38px;
+        font-size: 18px;
+    }
+    .wrapper {
+        display: block;
+        width: 100vw;
+        margin: 48px auto;
+    }
+
+    .nav {
+        display: block;
+        width: 100%;
+        padding: 0;
+        margin: 0 auto;
+        height: auto;
+    }
+
+    .right {
+        width: 312px;
+        margin-top: 48px;
+        margin-left: 28px;
+        margin-bottom: 48px;
+        padding: 0px;
+        border-left: unset;
+    }
+    .right h2 {
+        text-align: center;
+    }
+
+    .progress {
+        display: flex;
+        background-image: none;
+    }
+
+    span{
+        font-size: 12px;
+        margin: 0 auto;
+    }
+    span.active {
+        font-size: 12px;
+    }
+
+    .order-info h5 {
+        font-size: 16px;
+        padding-top: 4px;
+        padding-bottom: 8px;
+    }
+    .order-info h6 {
+        font-size: 14px;
+    }
+
+    .product-info-title {
+        display: none;
+    }
+    .product-info-1 img, .product-info-2 img, .product-info-3 img {
+        width: 52px;
+        height: 52px;
+    }
+    .product-info-1, .product-info-2, .product-info-3 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 16px 0 8px;
+    }
+    .product-info-name h4 {
+        font-size: 14px;
+    }
+    .product-info-name h5 {
+        font-size: 12px;
+    }
+    .product-info-price {
+        width: 100%;
+        display: flex;
+    }
+    .product-info-price h6 {
+        font-size: 12px;
+        margin-left: 24px;
+    }
+    
+    .btn-buy-again a {
+        width: 335px;
+        line-height: 40px;
+        font-size: 16px;
+        margin-left: 390px;
+    }
 }

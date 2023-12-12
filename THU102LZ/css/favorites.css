@@ -28,7 +28,7 @@ body{
     padding-left: 150px;
 }
 
-.content{
+.wrapper{
     width: 1200px;
     height: 628px;
     margin: 88px auto;
@@ -150,4 +150,75 @@ body{
     padding: 4px 16px;
     margin-top: 8px;
     box-sizing: border-box;
+}
+
+/* --------------- RWD --------------- */
+@media screen and (max-width: 375px) {
+    html {
+        overflow-x: hidden;
+    }
+    body {
+        overflow-x: hidden;
+    }
+
+    .bn {
+        height: 200px;
+        text-shadow: 2px 2px 5px #333333;
+    }
+    .bn h1 {
+        padding-top: 55px;
+        padding-left: 38px;
+        font-size: 28px;
+    }
+    .bn h2 {
+        padding-left: 38px;
+        font-size: 18px;
+    }
+    .wrapper {
+        display: block;
+        width: 100vw;
+        margin: 48px auto;
+    }
+
+    .nav {
+        display: block;
+        width: 100%;
+        padding: 0;
+        margin: 0 auto;
+        height: auto;
+    }
+
+    .right {
+        width: 312px;
+        margin-top: 48px;
+        margin-left: 28px;
+        margin-bottom: 48px;
+        padding: 0px;
+        border-left: unset;
+    }
+    .right h2 {
+        text-align: center;
+    }
+
+    .list_1 img, .list_2 img, .list_3 img, .list_4 img {
+        width: 52px;
+        height: 52px;
+    }
+    .item_name h5 {
+        font-size: 14px;
+        margin: 4px 0;
+    }
+    .item_name h6 {
+        font-size: 12px;
+        margin: 4px 0;
+    }
+
+    .item_btn i {
+        font-size: 16px;
+    }
+    .item_btn a {
+        font-size: 14px;
+        width: 120px;
+        line-height: 24px;
+    }
 }

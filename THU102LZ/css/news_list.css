@@ -305,37 +305,86 @@ a:nth-child(2) {
 }
 
 /* ------------------- RWD ------------------- */
-@media screen and (max-width: 1200px) {}
-
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1200px) {
+    .bn {
+        height: 200px;
+        text-shadow: 2px 2px 5px #333333;
+    }
+    .bn h1 {
+        padding-top: 55px;
+        padding-left: 38px;
+    }
+    .bn h2 {
+        padding-left: 38px;
+        font-size: 20px;
+    }
     .wrapper {
-        width: 900px;
+        display: block;
+        width: 100vw;
+    }
+
+    .news1, .news2, .news3, .news4 {
+        width: 1200px;
+        height: 280px;
     }
     .news1 img, .news2 img, .news3 img, .news4 img {
-        width: 375px;
+        width: 420px;
+        height: 280px;
+        float: left;
     }
+
     .content1, .content2, .content3, .content4 {
-        width: 500px;
+        width: 740px;
+        float: right;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .bn {
+        height: 200px;
+        text-shadow: 2px 2px 5px #333333;
+    }
+    .bn h1 {
+        padding-top: 55px;
+        padding-left: 38px;
+    }
+    .bn h2 {
+        padding-left: 38px;
+        font-size: 20px;
+    }
+    .wrapper {
+        display: block;
+        width: 100vw;
+    }
+
+    .news1, .news2, .news3, .news4 {
+        width: 900px;
+        height: 280px;
+    }
+    .news1 img, .news2 img, .news3 img, .news4 img {
+        width: 420px;
+        height: 280px;
+        float: left;
+    }
+
+    .content1, .content2, .content3, .content4 {
+        width: 440px;
+        float: right;
     }
     .content1 h4, .content2 h4, .content3 h4, .content4 h4 {
-        font-size: 14px;
+        font-size: 18px;
+        padding-bottom: 8px;
     }
     .content1 h1, .content2 h1, .content3 h1, .content4 h1 {
-        font-size: 18px;
+        font-size: 20px;
+        padding-bottom: 8px;
     }
     .content1 p, .content2 p, .content3 p, .content4 p {
-        font-size: 16px;
+        font-size: 18px;
+        padding-bottom: 8px;
     }
-    .content1 a, .content2 a, .content3 a, .content4 a {
-        width: 120px;
-        font-size: 16px;
-        top: 170px;
-    }
-    .news1, .news2, .news3, .news4 {
-        height: 240px;
-    }
-    .pagination {
-        padding: 24px 0;
+    a:hover {
+        background-color: #87BC60;
     }
 }
 
@@ -347,34 +396,56 @@ a:nth-child(2) {
         overflow-x: hidden;
     }
 
+    .bn {
+        height: 200px;
+        text-shadow: 2px 2px 5px #333333;
+    }
     .bn h1 {
+        padding-top: 55px;
+        padding-left: 38px;
         font-size: 28px;
-        padding-left: 80px;
     }
     .bn h2 {
-        font-size: 16px;
-        padding-left: 80px;
+        padding-left: 38px;
+        font-size: 18px;
     }
-    
     .wrapper {
-        width: 100%;
-        margin: 48px 0;
-    }
-    .news1, .news2, .news3, .news4 {
-        display: flex;
-        flex-direction: column;
-    }
-    .content1, .content2, .content3, .content4 {
-        width: 375px;
-        float: none;
-        font-size: 16px;
-        position: relative;
-    }
-    .content1 a, .content2 a, .content3 a, .content4 a {
-        position: absolute;
-        top: 220px;
-        width: 100%;
-        line-height: 32px;
+        display: block;
+        width: 100vw;
+        margin: 48px auto;
     }
 
+    .news1, .news2, .news3, .news4 {
+        height: 485px;
+        margin-left: 20px;
+    }
+
+    .news1 img, .news2 img, .news3 img, .news4 img {
+        width: 333px;
+        height: 200px;
+        float: none;
+    }
+
+    .content1, .content2, .content3, .content4 {
+        width: 333px;
+        float: none;
+    }
+    .content1 h4, .content2 h4, .content3 h4, .content4 h4 {
+        font-size: 16px;
+        padding-bottom: 8px;
+    }
+    .content1 h1, .content2 h1, .content3 h1, .content4 h1 {
+        font-size: 16px;
+        padding-bottom: 8px;
+    }
+    .content1 p, .content2 p, .content3 p, .content4 p {
+        font-size: 16px;
+        padding-bottom: 8px;
+    }
+    .content1 a, .content2 a, .content3 a, .content4 a {
+        width: 333px;
+        font-size: 16px;
+        line-height: 32px;
+        margin-top: 8px;
+    }
 }

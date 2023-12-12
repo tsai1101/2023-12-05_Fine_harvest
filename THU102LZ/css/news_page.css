@@ -112,6 +112,9 @@ section ul li{
 
 .recommend li h1{
     font-size: 16px;
+    font-weight: normal;
+    padding-bottom: 4px;
+    color: #909090;
 	text-align: left;
 }
 
@@ -129,7 +132,14 @@ section ul li{
 .recommend li h4{
     font-size: 14px;
 	text-align: left;
+    margin-left: 8px;
+    margin-top: 4px;
+    text-decoration: line-through;
 	color: #909090;
+}
+
+.recommend .price{
+    display: flex;
 }
 
 .recommend li a{
@@ -151,19 +161,89 @@ section ul li{
 }
 
 /* --------------------- RWD ---------------------- */
+@media screen and (max-width: 375px) {
+    html {
+        overflow-x: hidden;
+    }
+    body {
+        overflow-x: hidden;
+    }
 
-@media screen and (max-width: 430px){
+    .bn {
+        height: 200px;
+        text-shadow: 2px 2px 5px #333333;
+    }
+    .bn h1 {
+        padding-top: 55px;
+        padding-left: 38px;
+        font-size: 28px;
+    }
+    .bn h2 {
+        padding-left: 38px;
+        font-size: 18px;
+    }
+    .wrapper {
+        display: block;
+        width: 100vw;
+        margin: 48px auto;
+    }
 
-}
+    .title {
+        display: grid;
+    }
+    .title h1 {
+        font-size: 16px;
+        order: 2;
+    }
+    .title h4 {
+        font-size: 16px;
+        order: 1;
+        margin-left: 0;
+    }
 
-@media screen and (max-width: 414px){
+    section img{
+        width: 333px;
+        height: 200px;
+    }
+    section ul {
+        margin: 16px 24px 48px;
+    }
+    section ul li {
+        font-size: 16px;
+    }
 
-}
-
-@media screen and (max-width: 390px){
-
-}
-
-@media screen and (max-width: 375px){
-
+    .recommend h1 {
+        font-size: 18px;
+        padding-bottom: 8px;
+    }
+    .recommend ul {
+        width: 360px;
+        padding: 16px 20px;
+    }
+    .recommend li{
+        width: 156px;
+        margin: 0 12px 16px;
+    }
+    .recommend li h1{
+        font-size: 14px;
+    }
+    .recommend li h2{
+        font-size: 16px;
+    }
+    .recommend li h3{
+        font-size: 16px;
+    }
+    .recommend li h4{
+        font-size: 14px;
+    }
+    .recommend .price-mb{
+        margin-top: 26px;
+    }
+    .recommend li a{
+        font-size: 14px;
+        width: 155px;
+        height: 32px;
+        line-height: 32px;
+        margin-top: 8px;
+    }
 }

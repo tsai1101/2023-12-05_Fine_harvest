@@ -8,7 +8,7 @@ body{
     color: #333333;
 }
 
-.content{
+.wrapper{
     width: 1200px;
     margin: 88px auto;
 }
@@ -184,7 +184,6 @@ input:focus{
     width: 479px;
     height: 46px;
     font-size: 20px;
-    font-weight: bold;
     color: #ffffff;
     background-color: #355441;
     text-align: center;
@@ -207,17 +206,54 @@ input:focus{
         overflow-x: hidden;
     }
 
+    .bn {
+        height: 200px;
+        text-shadow: 2px 2px 5px #333333;
+    }
     .bn h1 {
+        padding-top: 55px;
+        padding-left: 38px;
         font-size: 28px;
-        padding-left: 80px;
     }
     .bn h2 {
-        font-size: 16px;
-        padding-left: 80px;
+        padding-left: 38px;
+        font-size: 18px;
     }
     .wrapper {
-        width: 100%;
+        display: block;
+        width: 100vw;
         margin: 48px auto;
     }
-    
+
+    .nav {
+        display: block;
+        width: 100%;
+        padding: 0;
+        margin: 0 auto;
+        height: auto;
+    }
+
+    .right {
+        width: 312px;
+        margin-top: 48px;
+        margin-left: 28px;
+        padding: 0px;
+        border-left: unset;
+    }
+    .right h2 {
+        text-align: center;
+    }
+
+    .quick_login, .change_password {
+        margin-top: 24px;
+    }
+
+    .save a {
+        width: 312px;
+        height: 40px;
+        font-size: 16px;
+        line-height: 40px;
+        margin: 24px 0 48px;
+    }
+
 }
