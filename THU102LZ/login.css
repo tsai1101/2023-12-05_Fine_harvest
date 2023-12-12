@@ -4,7 +4,7 @@ body{
     font-family: 'Noto Sans TC', 'Roboto', sans-serif;
     line-height: 1.6;
     letter-spacing: 1.5px;
-    background-color: #FFE78F;
+    background-color: #ffe78f;
     color: #333333;
     font-size: 18px;
 }
@@ -16,50 +16,21 @@ body{
 
 /* ----------------- 左半部 ----------------- */
 .left{
-    width: 40%;
-    height: 886.87px;
-    background-color: #FFE78F;
-    float: left;
-    position: relative;
-    z-index: 1;
-}
-
-.left h1{
-    font-size: 32px;
-    font-weight: bold;
-    display: block;
-    text-align: center;
-    margin: 0 auto;
-    padding-top: 180px;
-}
-
-.left img{
-    width: 300px;
-    height: 300px;
-    display: block;
-    text-align: center;
-    margin: 0 auto;
-    padding-top: 32px;
-}
-
-/* ----------------- 右半部 ----------------- */
-.right{
     width: 60%;
-    border-radius: 60px 0 0 60px;
-    background-color:#FFFDF1;
-    float: right;
-    position: relative;
-    z-index: 10;
+    height: 100%;
+    border-radius: 0 60px 60px 0;
+    background-color: #fffdf1;
+    float: left;
 }
 
-.right h2{
+.left h2{
     font-size: 32px;
     font-weight: bold;
-    margin-top: 40px;
+    margin-top: 60px;
     margin-bottom: 32px;
 }
 
-.right_content{
+.left_content{
     margin-top: 24px;
     margin-left: 160px;
 }
@@ -82,18 +53,6 @@ input{
 input:focus{
     border-color: #4CAF50;
 }
-
-.input_password{
-    width: 70%;
-    margin-bottom: 16px;
-    box-sizing: border-box;
-    border-radius: 8px;
-}
-
-.input_password_real{
-    background-color: #fff;
-}
-
 
 /* ----------------- 切換密碼 ----------------- */
 #password, #confirm_password{
@@ -124,58 +83,32 @@ input:focus{
     left: -40px;  
 }
 
-/* ----------------- 驗證碼 ----------------- */
-input#captchaInput{
-    width: 40%;
-}
-
-#captcha{
-    width: 88px;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 2px 16px;
-    border: 1px solid #333;
-    border-radius: 8px;
-    display: inline-block;
+/* ----------------- 忘記密碼 ----------------- */
+button{
+    display: block;
     text-align: center;
-    margin-left: 16px;
-}
-
-#refreshBtn{
-    line-height: 16px;
-    background-color: #fff;
-    border-radius: 8px;
-    padding: 8px 16px;
+    margin: 0 auto;
+    color: #333333;
+    background-color: #FFFDF1;
     font-size: 16px;
+    line-height: 16px;
+    margin-top: 8px;
+    margin-left: 400px;
+    border: 0;
     cursor: pointer;
-    display: inline-block;
-    margin-left: 8px;
 }
 
-/* ----------------- 勾選個人資料同意 ----------------- */
-.agree{
-    display: flex;
-    margin: 8px 0;
-}
-
-.agree input{
-    margin-right: 8px;
-    width: 16px;
-    height: 16px;
-}
-
-.agree label{
-    margin: 0;
-    font-size: 14px;
+button:hover{
+  background-color: #cccccc;
 }
 
 /* ----------------- 按鈕 ----------------- */
 .btn {
     display: flex;
-    margin-top: 24px;
+    margin-top: 76px;
 }
 
-.logIn a{
+.signUp a{
     width: 176px;
     display: block;
     text-align: center;
@@ -188,7 +121,7 @@ input#captchaInput{
     margin-right: 16px;
 }
 
-.signUp a{
+.logIn a{
     width: 264px;
     display: block;
     text-align: center;
@@ -200,7 +133,7 @@ input#captchaInput{
     border-radius: 8px; 
 }
 
-.logIn a:hover, .signUp a:hover{
+.signUp a:hover, .logIn a:hover{
     background-color: #87BC60;
 }
 
@@ -243,7 +176,7 @@ input#captchaInput{
     border: 1px solid #333;
     border-radius: 8px;
     padding: 8px;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 
 .fb a i, .line a i{
@@ -251,9 +184,100 @@ input#captchaInput{
     text-align: left;
 }
 
+/* ----------------- 右半部 ----------------- */
+.right{
+    width: 40%;
+    height: 712.98px;
+    background-color: #ffe78f;
+    float: right;
+}
 
+.right h1{
+    font-size: 32px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 180px;
+}
 
-/* ------------------ RWD -------------------- */
+.right img{
+    width: 300px;
+    height: 300px;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 32px;
+}
+
+/* ----------------- Popup Area ----------------- */
+.mask{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.3);
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+.popup{
+    width: 800px;
+    padding: 30px;
+    background-color: #F5EBC7;
+    border-radius: 40px;
+    border: 3px solid #335441;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+}
+
+.popup i{
+    font-size: 32px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    line-height: 1;
+    color: #333333;
+}
+  
+.popup i:hover{
+    color: #cccccc;
+}
+  
+.popup h3{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 24px;
+}
+  
+.popup p{
+    font-size: 18px;
+    text-align: center;
+}
+
+.popup a{
+    display: block;
+    color: #ffffff;
+    background-color: #335441;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 40px;
+    width: 150px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.popup a:hover{
+    background-color: #87BC60;
+}
+
+/* ----------------- RWD ----------------- */
 @media screen and (max-width: 375px) {
     html {
         overflow-x: hidden;
@@ -263,24 +287,24 @@ input#captchaInput{
         background-color: #f9f9f9;
     }
 
-    .left {
+    .right {
         display: none;
     }
-    .right {
+    .left {
         width: 100%;
         border-radius: 0;
         background-color: #f9f9f9;
         float: none;
     }
-    .right h2 {
+    .left h2 {
         font-size: 28px;
     }
-    .right_content {
+    .left_content {
         width: 360px;
         margin-top: 24px;
         margin-left: 40px;
     }
-    i {
+    i{
         font-size: 14px;
     }
     .fa-eye-slash {
@@ -294,34 +318,9 @@ input#captchaInput{
     input {
         width: 80%;
     }
-    #password, #confirm_password {
+    #password {
         width: 80%;
     }
-    input#captchaInput {
-        width: 43%;
-    }
-    #captcha {
-        width: 46px;
-        font-size: 14px;
-        font-weight: bold;
-        padding: 6px 8px;
-        border: 1px solid #333;
-        border-radius: 8px;
-        display: inline-block;
-        text-align: center;
-        margin-left: 4px;
-    }
-    #refreshBtn {
-        line-height: 14px;
-        font-size: 14px;
-        margin-left: 4px;
-    }
-    .agree input {
-        margin-right: 4px;
-        width: 14px;
-        height: 14px;
-    }
-
     .dashed-text {
         font-size: 14px;
     }
@@ -336,19 +335,19 @@ input#captchaInput{
         margin: 0;
         font-size: 16px;
     }
-    .logIn {
+    .signUp {
         display: grid;
         order: 2;
     }
-    .logIn a {
+    .signUp a {
         width: 268px;
     }
-    .signUp {
+    .logIn {
         display: grid;
         order: 1;
         margin-bottom: 8px;
     }
-    .signUp a {
+    .logIn a {
         width: 268px;
     }
 
@@ -357,5 +356,8 @@ input#captchaInput{
     }
     .fb a span, .line a span {
         font-size: 16px;
+    }
+    button{
+        display: contents;
     }
 }
