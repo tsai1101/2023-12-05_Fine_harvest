@@ -357,7 +357,12 @@ button:hover{
     .fb a span, .line a span {
         font-size: 16px;
     }
-    button{
+    .forgot-btn {
+        width: 70px;
+        margin-left: 220px;
+    }
+    button {
         display: contents;
+        float: right;
     }
 }
